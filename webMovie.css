@@ -1,0 +1,91 @@
+
+/* -------MOVIE MAX-------- */
+
+/* -------> DISPLAY FLEX <-------- */
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* -------> general <-------- */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family:sans-serif;
+    font-size:12px ;
+    background-color: black;
+}
+
+/* -------> header <-------- */
+header{
+    width: 100%; 
+    clear: both; 
+}
+#imgInit{
+    width: 100%;
+}
+nav{
+    clear: both;
+}
+.nav a{
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    color:white;
+    padding:20px;
+    width: 20%; 
+}
+.nav h1{
+float: right;
+color: white;
+margin-left: 20px;
+margin-right: 10px;
+padding-top: 10px;
+}
+.nav span{
+    color: red;
+    font-size:xx-large;
+}
+.nav a:hover{
+    background-color: red;
+}
+
+/* -------> main container <-------- */
+
+/* FORM <-------- */
+#formContainer{
+    margin-top: 40px;
+}
+#form input{
+    background-color: rgb(226, 223, 223);
+    width: 700px;
+    color: black;
+    border: none;
+    padding: 20px;
+    margin-top: 4px; 
+}
+#form button{
+    background-color: rgb(247, 2, 2);
+    width: 700px;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin-top: 4px; 
+}
+
+/* -------> mediaQuery <-------- */
+

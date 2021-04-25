@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMax</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cc1148a0b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./webMovie.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./webmovies.js"></script>
+
+</head>
+
+
+<body>
+    <header>
+        <img id="imgInit" src="./init.jpg" alt="">
+
+        <nav class="nav">
+            <h1><span>M</span>ovie <span>M</span>ax</h1>
+            <a onclick="mostrarPeliculas()" href="">PELICULAS</a>
+            <a href="">ACTORES</a>
+        </nav>
+
+    </header>
+
+    <div id="container" class="col">
+
+        <div id="mostrarPeliculas" class="card" style="width: 18rem;"></div>
+
+        <div id="formContainer"class="row">
+                <form  id="form" class="col" action="">
+                    <input type="text" id="titulo" placeholder="Escribe el titulo de la pelicula">
+                    <input type="number" id="releaseYear"  placeholder="Año de estreno">
+                    <input type="text" id="nationality"  placeholder="Nacionalidad">
+                    <input type="text" id="genre"  placeholder="genero">
+                    <input type="text" id="director"  placeholder="Director">
+                    <input type="url" id="foto"  placeholder="url de foto">
+
+                    <button type="button" onclick="crearPelicula()">GUARDAR PELICULA</button>
+                </form>
+        </div>
+
+    </div>
+   
+
+    
+</body>
+</html>
